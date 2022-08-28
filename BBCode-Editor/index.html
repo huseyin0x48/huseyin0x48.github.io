@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+		<title>BBCode Editor</title>
+
+		<link rel="stylesheet" href="./minified/themes/modern.min.css" id="theme-style" />
+		  
+		<script src="./minified/sceditor.min.js"></script>
+		<script src="./minified/icons/monocons.js"></script>
+		<script src="./minified/formats/bbcode.js"></script>
+
+		<style>
+			html {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 13px;
+				background-image: url("https://ak.picdn.net/shutterstock/videos/31218667/thumb/1.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			form div {
+				padding: .5em;
+				margin-left: 150px;
+
+			}
+			
+			code:before {
+				position: absolute;
+				content: 'Code:';
+				top: -1.35em;
+				left: 0;
+				
+			}
+			code {
+				margin-top: 1.5em;
+				position: relative;
+				background: #eee;
+				border: 1px solid #aaa;
+				white-space: pre;
+				padding: .25em;
+				min-height: 1.25em;
+			}
+			code:before, code {
+				display: block;
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post">
+			<div>
+				<textarea  id="example" style="height:500px;width:1000px;">[center]
+[img]https://i.hizliresim.com/jyo2qm.png[/img]
+[font=Courier New][b][color=white]Merhaba [color=red]T[/color]ürk[color=red]H[/color]ack[color=red]T[/color]eam Üyeleri.
+Bu Konumda Sizlere [/color][/b][/font]
+
+
+[img]https://i.resimyukle.xyz/dWHR1f.gif[/img]
+
+
+
+[b][font=Courier New][color=deepskyblue][size=4]Konu İçeriği[/size][/color][/font][/b]
+
+[font=Courier New][b][color=deepskyblue]➤[/color][/b]
+
+[b][color=deepskyblue]➤[/color][/b]
+
+[b][color=deepskyblue]➤[/color][/b][/font]
+
+
+[img]https://i.resimyukle.xyz/PN002A.png[/img]
+
+
+[b][font=Courier New][size=4][color=red]Başlık[/color][/size][/font][/b]
+
+
+[font=Courier New][color=white]İçerik[/color][/font]
+
+[img]https://i.resimyukle.xyz/RGQJLC.gif[/img]
+
+
+[b][font=Courier New][size=4][color=red]Başlık[/color][/size][/font][/b]
+
+
+[font=Courier New][color=white]İçerik[/color][/font]
+
+[img]https://i.resimyukle.xyz/RGQJLC.gif[/img]
+
+
+[b][font=Courier New][size=4][color=red]Başlık[/color][/size][/font][/b]
+
+
+[font=Courier New][color=white]İçerik[/color][/font]
+
+[img]https://i.resimyukle.xyz/RGQJLC.gif[/img]
+
+
+[img]https://i.hizliresim.com/KOBXfE.png[/img]
+
+
+[font=Courier New][color=white]Okuduğunuz İçin Teşekkür Ederim.
+Esenlikle Kalın...
+
+[b]Saygılarımla[/b]:Smiley1021:
+[/color][/font]
+
+[img]https://i.hizliresim.com/AVT84H.png[/img]
+[/center]
+</textarea>
+
+	
+
+				<p style="font-size: 15px;color: white;margin-left: 345px;"><em>TurkHackTeam // XCodeExpertX \\ TurkHackTeam</em></p>
+				<button style="background-color: #1c1c1c;margin-left: 480px;"><a href="ayraclar.html" target=”_blank” style="color:#fff;">Ayraçlar</a></button>
+			</div>
+
+			
+		</form>
+
+
+		<script>
+			var textarea = document.getElementById('example');
+			sceditor.create(textarea, {
+				format: 'bbcode',
+				icons: 'monocons',
+				style: '../minified/themes/content/default.min.css'
+			});
+
+
+			var themeInput = document.getElementById('theme');
+			themeInput.onchange = function() {
+				var theme = '../minified/themes/' + themeInput.value + '.min.css';
+
+				document.getElementById('theme-style').href = theme;
+			};
+		</script>
+
+		
+	</body>
+</html>
