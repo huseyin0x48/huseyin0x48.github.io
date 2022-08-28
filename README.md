@@ -6,4 +6,3 @@ Kendi kodladığım web site demoları.
 * [Saygi-Company-Site](https://huseyin0x48.github.io/Saygi-Company-Site)  
 * [Portfolio-Site](https://huseyin0x48.github.io/Portfolio-Site)  
 * [Web-Site-0](https://huseyin0x48.github.io/Web-Site-0)  
-* [Web-Site-1](https://huseyin0x48.github.io/Web-Site-1)  
